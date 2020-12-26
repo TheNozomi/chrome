@@ -50,6 +50,6 @@ RUN if [ "$USE_CHROME_STABLE" = "true" ]; then \
 USER blessuser
 
 # Expose the web-socket and HTTP ports
-EXPOSE 3000
+EXPOSE $PORT
 
 CMD ["./start.sh"]
